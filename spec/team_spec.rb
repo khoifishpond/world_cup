@@ -37,5 +37,17 @@ describe Team do
     it 'starts with no players' do
       expect(team.players).to eq([])
     end
+
+    it 'can add players' do
+      expect(team.players).to eq([])
+
+      team.add_player(mbappe)
+
+      expect(team.players).to eq([mbappe])
+
+      team.add_player(pogba)
+
+      expect(team.players).to eq([mbappe, pogba])
+    end
   end
 end
