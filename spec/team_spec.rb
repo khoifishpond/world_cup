@@ -33,5 +33,9 @@ describe Team do
       expect(mbappe).to be_a(Player)
       expect(pogba).to be_a(Player)
     end
+
+    it 'starts with no players' do
+      expect(team.players).to eq([])
+    end
   end
 end
