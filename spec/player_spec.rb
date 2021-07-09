@@ -11,4 +11,8 @@ describe Player do
   it 'has a name' do
     expect(player.name).to eq("Luka Modric")
   end
+
+  it 'has a position' do
+    expect(player.name).to eq("midfielder")
+  end
 end
