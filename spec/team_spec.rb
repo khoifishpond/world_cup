@@ -16,4 +16,10 @@ describe Team do
   it 'is not eliminated' do
     expect(team.eliminated?).to eq(false)
   end
+
+  it 'can be eliminated' do
+    team.eliminated
+
+    expect(team.eliminated?).to eq(true)
+  end
 end
