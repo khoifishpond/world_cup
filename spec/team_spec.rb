@@ -13,7 +13,7 @@ describe Team do
     expect(team.country).to eq("France")
   end
 
-  it 'is not eliminated by default' do
+  it 'is not eliminated' do
     expect(team.eliminated?).to eq(false)
   end
 end
