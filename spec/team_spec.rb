@@ -3,11 +3,13 @@ require './lib/team'
 require './lib/player'
 
 describe Team do
-  context do
-    team = Team.new("France")
+  team = Team.new("France")
 
-    it 'exists' do
-      expect(team.country).to eq("France")
-    end
+  it 'exists' do
+    expect(team).to be_a(Team)
+  end
+
+  it 'has a country' do
+    expect(team.country).to eq("France")
   end
 end
