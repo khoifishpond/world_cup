@@ -13,6 +13,6 @@ describe Player do
   end
 
   it 'has a position' do
-    expect(player.name).to eq("midfielder")
+    expect(player.position).to eq("midfielder")
   end
 end
