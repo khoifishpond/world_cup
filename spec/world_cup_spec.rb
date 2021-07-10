@@ -16,7 +16,13 @@ describe WorldCup do
   croatia.add_player(vida)
   world_cup = WorldCup.new(2018, [france, croatia])
 
-  it 'exists' do
-    expect(world_cup).to be_a(WorldCup)
+  context 'Attributes' do
+    it 'exists' do
+      expect(world_cup).to be_a(WorldCup)
+    end
+
+    it 'has a year' do
+      expect(world_cup.year).to eq(2018)
+    end
   end
 end
