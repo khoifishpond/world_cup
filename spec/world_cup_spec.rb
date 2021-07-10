@@ -14,7 +14,7 @@ describe WorldCup do
   vida = Player.new({name: "Domagoj Vida", position: "defender"})
   croatia.add_player(modric)
   croatia.add_player(vida)
-  world_cup = WorldCup.new(2018, [fance, croatia])
+  world_cup = WorldCup.new(2018, [france, croatia])
 
   it 'exists' do
     expect(world_cup).to be_a(WorldCup)
