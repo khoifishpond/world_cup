@@ -20,8 +20,6 @@ class Team
   end
 
   def players_by_position(position)
-    @players.find_all do |player|
-      player if player.position == position
-    end
+    @players.find_all { |player| player if player.position == position }
   end
 end
