@@ -24,5 +24,9 @@ describe WorldCup do
     it 'has a year' do
       expect(world_cup.year).to eq(2018)
     end
+
+    it 'has teams' do
+      expect(world_cup.teams).to eq([france, croatia])
+    end
   end
 end
