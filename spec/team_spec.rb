@@ -52,6 +52,7 @@ describe Team do
 
     it 'can find players by their position' do
       expect(team.players_by_position("midfielder")).to eq([pogba])
+      expect(team.players_by_position("defender")).to eq([])
     end
   end
 end
