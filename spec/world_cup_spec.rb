@@ -36,5 +36,15 @@ describe WorldCup do
 
       expect(world_cup.active_players_by_position("midfielder")).to eq([pogba])
     end
+
+    it 'can get all players by their position' do
+      expect(world_cup.all_players_by_position).to eq(
+        {
+          "forward" => [mbappe],
+          "midfielder" => [pogba, modric],
+          "defender" => [vida]
+        }
+      )
+    end
   end
 end
