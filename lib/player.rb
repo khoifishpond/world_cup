@@ -1,9 +1,9 @@
 class Player
-  attr_reader :hash, :name, :position
+  attr_reader :name, :position#, :hash
 
   def initialize(hash)
-    @hash = hash
-    @name = @hash[:name]
-    @position = @hash[:position]
+    # @hash = hash  # is this necessary?
+    @name = hash[:name]
+    @position = hash[:position]
   end
 end
