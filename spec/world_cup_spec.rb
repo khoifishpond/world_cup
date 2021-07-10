@@ -28,5 +28,13 @@ describe WorldCup do
     it 'has teams' do
       expect(world_cup.teams).to eq([france, croatia])
     end
+
+    it 'can find active players by their position' do
+      expect(world_cup.active_players_by_position("midfielder")).to eq([pogba, modric])
+
+      croatia.eliminated
+
+      expect(world_cup.active_players_by_position("midfielder")).to eq([pogba])
+    end
   end
 end
